@@ -7,8 +7,8 @@ The paper's mechanisms decide which reported agents to remove by asking a small 
 ## Summary of results
 
 - **Verifier susceptibility (offline, E0).** On fixed target logs with known ground truth, rewriting false reports in an authoritative, specific style raised false acceptance from 7% to 47–65% for a Qwen3-8B verifier. The 0.6B verifier used in the paper accepted 87% of plain false reports and 100% of attack-style ones. Withholding the reporter's justification removed false acceptance (0%), but reduced recall from 85% to 40% at 8B.
-- **Reputation inversion (simulation, E1 vs E2).** Under verifier-targeted reporting, the 0.6B runtime verifier accepted 96% (48/50) of reports against agents with no judged violation. EscRepVote's bad reporters ended with higher mean reputation (0.88) than honest reporters, and none fell below the verification threshold. Under the paper's explicit-abuse threat model, 3 of 4 did.
-- **Partial replication (E1).** Naive enforcement performed below random under explicit abuse (normalized AUC 0.62; paper 0.92), and EscRepVote scored highest in that setting (1.69; paper 2.23). Other mechanism rankings did not replicate and are not stable at this scale.
+- **Reputation inversion (simulation, E1 vs E2).** Under verifier-targeted reporting, 48 of 50 verifications by the 0.6B runtime verifier of agents with no judged violation so far returned a removal score (42 of 43 when only bad agents had reported). EscRepVote's five bad-role reporters ended with mean reputation 0.88, versus 0.75 for the one good-role reporter, and none fell below the verification threshold. Under the paper's explicit-abuse threat model, 3 of 4 did.
+- **Partial replication (E1).** Naive enforcement performed below random under explicit abuse (normalized AUC 0.62; paper 0.92), and EscRepVote scored highest in these runs (1.69; 2.23 in the paper, where Backfire was highest at 2.45). Other mechanism rankings did not replicate and are not stable at this scale.
 
 ![Verifier false-acceptance rate by model size and report style](results/fig_e0_false_acceptance.png)
 

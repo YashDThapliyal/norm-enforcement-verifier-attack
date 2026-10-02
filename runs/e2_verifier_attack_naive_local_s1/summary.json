@@ -1,0 +1,35 @@
+{
+  "run_id": "e2_verifier_attack_naive_local_s1",
+  "experiment": "e2",
+  "condition": "verifier_attack",
+  "mechanism": "naive",
+  "seed": 1,
+  "verifier_mode": "full",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "good",
+    "1": "verifier_attack",
+    "2": "good",
+    "3": "verifier_attack",
+    "4": "verifier_attack",
+    "5": "good",
+    "6": "verifier_attack",
+    "7": "good"
+  },
+  "removed_round": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "5": 2,
+    "6": 2,
+    "7": 2
+  },
+  "rounds_run": 2,
+  "collapsed": false,
+  "final_population": 2461.0,
+  "verifier_calls": 0,
+  "seconds": 194.8
+}

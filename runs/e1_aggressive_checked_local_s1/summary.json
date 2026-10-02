@@ -1,0 +1,32 @@
+{
+  "run_id": "e1_aggressive_checked_local_s1",
+  "experiment": "e1",
+  "condition": "aggressive",
+  "mechanism": "checked",
+  "seed": 1,
+  "verifier_mode": "full",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "good",
+    "1": "aggressive",
+    "2": "good",
+    "3": "aggressive",
+    "4": "aggressive",
+    "5": "good",
+    "6": "aggressive",
+    "7": "good"
+  },
+  "removed_round": {
+    "1": 5,
+    "3": 12,
+    "4": 12,
+    "6": 12
+  },
+  "rounds_run": 15,
+  "collapsed": false,
+  "final_population": 2541.6086919060717,
+  "verifier_calls": 15,
+  "seconds": 3300.3
+}

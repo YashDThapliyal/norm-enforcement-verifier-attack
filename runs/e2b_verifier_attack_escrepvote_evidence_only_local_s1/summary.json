@@ -1,0 +1,31 @@
+{
+  "run_id": "e2b_verifier_attack_escrepvote_evidence_only_local_s1",
+  "experiment": "e2b",
+  "condition": "verifier_attack",
+  "mechanism": "escrepvote",
+  "seed": 1,
+  "verifier_mode": "evidence_only",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "good",
+    "1": "verifier_attack",
+    "2": "good",
+    "3": "verifier_attack",
+    "4": "verifier_attack",
+    "5": "good",
+    "6": "verifier_attack",
+    "7": "good"
+  },
+  "removed_round": {
+    "1": 9,
+    "6": 9,
+    "4": 11
+  },
+  "rounds_run": 15,
+  "collapsed": false,
+  "final_population": 1149.606606023118,
+  "verifier_calls": 18,
+  "seconds": 3008.4
+}

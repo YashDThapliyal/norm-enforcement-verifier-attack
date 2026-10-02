@@ -1,0 +1,17 @@
+{
+  "n_requests": 40,
+  "n_pairs": 249,
+  "exact": 0.8714859437751004,
+  "binary": 0.9477911646586346,
+  "haiku_flag_rate": 0.19678714859437751,
+  "sonnet_flag_rate": 0.20883534136546184,
+  "n_agents": 170,
+  "agent_flag_agreement_sampled_rounds": 0.9411764705882353,
+  "confusion_haiku_vs_sonnet": {
+    "haiku1_sonnet1": 37,
+    "haiku1_sonnet0": 4,
+    "haiku0_sonnet1": 6,
+    "haiku0_sonnet0": 123
+  },
+  "spend_after_usd": 8.3054
+}

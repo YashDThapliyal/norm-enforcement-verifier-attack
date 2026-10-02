@@ -1,0 +1,35 @@
+{
+  "run_id": "e1_explicit_abuse_naive_local_s0",
+  "experiment": "e1",
+  "condition": "explicit_abuse",
+  "mechanism": "naive",
+  "seed": 0,
+  "verifier_mode": "full",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "explicit_abuse",
+    "1": "good",
+    "2": "explicit_abuse",
+    "3": "good",
+    "4": "good",
+    "5": "good",
+    "6": "explicit_abuse",
+    "7": "explicit_abuse"
+  },
+  "removed_round": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 2
+  },
+  "rounds_run": 2,
+  "collapsed": false,
+  "final_population": 2418.75,
+  "verifier_calls": 0,
+  "seconds": 348.3
+}

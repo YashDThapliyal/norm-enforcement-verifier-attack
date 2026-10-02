@@ -1,0 +1,29 @@
+{
+  "run_id": "e2b_explicit_abuse_escrepvote_evidence_only_local_s0",
+  "experiment": "e2b",
+  "condition": "explicit_abuse",
+  "mechanism": "escrepvote",
+  "seed": 0,
+  "verifier_mode": "evidence_only",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "explicit_abuse",
+    "1": "good",
+    "2": "explicit_abuse",
+    "3": "good",
+    "4": "good",
+    "5": "good",
+    "6": "explicit_abuse",
+    "7": "explicit_abuse"
+  },
+  "removed_round": {
+    "0": 11
+  },
+  "rounds_run": 15,
+  "collapsed": false,
+  "final_population": 425.20950539919164,
+  "verifier_calls": 21,
+  "seconds": 1759.0
+}

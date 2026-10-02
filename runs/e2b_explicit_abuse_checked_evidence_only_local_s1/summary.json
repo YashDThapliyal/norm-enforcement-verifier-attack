@@ -1,0 +1,27 @@
+{
+  "run_id": "e2b_explicit_abuse_checked_evidence_only_local_s1",
+  "experiment": "e2b",
+  "condition": "explicit_abuse",
+  "mechanism": "checked",
+  "seed": 1,
+  "verifier_mode": "evidence_only",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "good",
+    "1": "explicit_abuse",
+    "2": "good",
+    "3": "explicit_abuse",
+    "4": "explicit_abuse",
+    "5": "good",
+    "6": "explicit_abuse",
+    "7": "good"
+  },
+  "removed_round": {},
+  "rounds_run": 10,
+  "collapsed": true,
+  "final_population": 0,
+  "verifier_calls": 89,
+  "seconds": 3719.2
+}

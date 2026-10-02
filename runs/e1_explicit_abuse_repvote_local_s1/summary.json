@@ -1,0 +1,32 @@
+{
+  "run_id": "e1_explicit_abuse_repvote_local_s1",
+  "experiment": "e1",
+  "condition": "explicit_abuse",
+  "mechanism": "repvote",
+  "seed": 1,
+  "verifier_mode": "full",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "good",
+    "1": "explicit_abuse",
+    "2": "good",
+    "3": "explicit_abuse",
+    "4": "explicit_abuse",
+    "5": "good",
+    "6": "explicit_abuse",
+    "7": "good"
+  },
+  "removed_round": {
+    "6": 2,
+    "1": 5,
+    "3": 5,
+    "4": 5
+  },
+  "rounds_run": 15,
+  "collapsed": false,
+  "final_population": 2873.5076421069807,
+  "verifier_calls": 4,
+  "seconds": 1466.3
+}

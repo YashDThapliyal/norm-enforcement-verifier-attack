@@ -1,0 +1,29 @@
+{
+  "run_id": "e3_explicit_abuse_escrepvote_haiku_s0",
+  "experiment": "e3",
+  "condition": "explicit_abuse",
+  "mechanism": "escrepvote",
+  "seed": 0,
+  "verifier_mode": "full",
+  "agent_source": "haiku",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "explicit_abuse",
+    "1": "good",
+    "2": "explicit_abuse",
+    "3": "good",
+    "4": "good",
+    "5": "good",
+    "6": "explicit_abuse",
+    "7": "explicit_abuse"
+  },
+  "removed_round": {
+    "7": 4
+  },
+  "rounds_run": 15,
+  "collapsed": false,
+  "final_population": 2845.981439256392,
+  "verifier_calls": 1,
+  "seconds": 180.4
+}

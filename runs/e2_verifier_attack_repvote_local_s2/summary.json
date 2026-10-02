@@ -1,0 +1,36 @@
+{
+  "run_id": "e2_verifier_attack_repvote_local_s2",
+  "experiment": "e2",
+  "condition": "verifier_attack",
+  "mechanism": "repvote",
+  "seed": 2,
+  "verifier_mode": "full",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "verifier_attack",
+    "1": "good",
+    "2": "verifier_attack",
+    "3": "good",
+    "4": "good",
+    "5": "verifier_attack",
+    "6": "verifier_attack",
+    "7": "good"
+  },
+  "removed_round": {
+    "4": 2,
+    "0": 4,
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4
+  },
+  "rounds_run": 4,
+  "collapsed": false,
+  "final_population": 1594.225522762224,
+  "verifier_calls": 8,
+  "seconds": 213.1
+}

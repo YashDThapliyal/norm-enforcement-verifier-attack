@@ -1,0 +1,30 @@
+{
+  "run_id": "e2b_verifier_attack_checked_evidence_only_local_s1",
+  "experiment": "e2b",
+  "condition": "verifier_attack",
+  "mechanism": "checked",
+  "seed": 1,
+  "verifier_mode": "evidence_only",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "good",
+    "1": "verifier_attack",
+    "2": "good",
+    "3": "verifier_attack",
+    "4": "verifier_attack",
+    "5": "good",
+    "6": "verifier_attack",
+    "7": "good"
+  },
+  "removed_round": {
+    "6": 4,
+    "5": 10
+  },
+  "rounds_run": 10,
+  "collapsed": true,
+  "final_population": 0,
+  "verifier_calls": 82,
+  "seconds": 1897.3
+}

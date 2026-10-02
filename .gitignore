@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+cache/
+runs/*/cache/
+.DS_Store
+references/
+
+# Not part of the public repository
+spec.md
+logs/
+results/*_private.md
+runs/smoke_*/

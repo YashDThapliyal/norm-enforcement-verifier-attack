@@ -1,0 +1,32 @@
+{
+  "run_id": "e4_laundering_escrepvote_local_s0",
+  "experiment": "e4",
+  "condition": "laundering",
+  "mechanism": "escrepvote",
+  "seed": 0,
+  "verifier_mode": "full",
+  "agent_source": "local",
+  "num_agents": 8,
+  "num_rounds": 15,
+  "roles": {
+    "0": "laundering",
+    "1": "good",
+    "2": "laundering",
+    "3": "good",
+    "4": "good",
+    "5": "good",
+    "6": "laundering",
+    "7": "laundering"
+  },
+  "removed_round": {
+    "0": 7,
+    "2": 7,
+    "6": 7,
+    "7": 7
+  },
+  "rounds_run": 15,
+  "collapsed": false,
+  "final_population": 2386.695546500164,
+  "verifier_calls": 8,
+  "seconds": 1880.1
+}

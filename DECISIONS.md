@@ -49,6 +49,7 @@ Without the stock level, overharvesting can't be judged. Rendering is in `src/ne
 
 ### 3.1 Models and serving
 
+- **Model precision.** All local models (agents and verifiers) are Ollama's 4-bit `Q4_K_M` builds. The paper does not state the precision of its Qwen3-0.6B verifier, so this is a possible source of difference in verifier behavior.
 - **Local serving.** Local models run on a dedicated Ollama server (0.34.0):
   - 4 parallel slots, an 8-bit KV cache, and an 8k context for agents (4k for the verifier);
   - 8 slots exceeded the 18 GB of unified memory and caused repeated model eviction;

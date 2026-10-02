@@ -6,7 +6,7 @@ The paper's mechanisms decide which reported agents to remove by asking a small 
 
 ## Summary of results
 
-- **Verifier susceptibility (offline, E0).** On fixed target logs with known ground truth, rewriting false reports in an authoritative, specific style raised false acceptance from 7% to 47–65% for a Qwen3-8B verifier. The 0.6B verifier used in the paper accepted 87% of plain false reports and 100% of attack-style ones. Withholding the reporter's justification removed false acceptance (0%), but reduced recall from 85% to 40% at 8B.
+- **Verifier susceptibility (offline, E0).** On fixed target logs with known ground truth, false reports written under instructions to persuade the verifier raised false acceptance from 7% to 47–65% for a Qwen3-8B verifier. In this reimplementation, the Qwen3-0.6B verifier model used in the paper accepted 87% of plain false reports and 100% of attack-style ones; this baseline may differ from the original setup (4-bit quantized model, own action rendering, templated logs). Withholding the reporter's justification removed false acceptance (0%), but reduced recall from 85% to 40% at 8B.
 - **Reputation inversion (simulation, E1 vs E2).** Under verifier-targeted reporting, 48 of 50 verifications by the 0.6B runtime verifier of agents with no judged violation so far returned a removal score (42 of 43 when only bad agents had reported). EscRepVote's five bad-role reporters ended with mean reputation 0.88, versus 0.75 for the one good-role reporter, and none fell below the verification threshold. Under the paper's explicit-abuse threat model, 3 of 4 did.
 - **Partial replication (E1).** Naive enforcement performed below random under explicit abuse (normalized AUC 0.62; paper 0.92), and EscRepVote scored highest in these runs (1.69; 2.23 in the paper, where Backfire was highest at 2.45). Other mechanism rankings did not replicate and are not stable at this scale.
 
@@ -91,6 +91,7 @@ Complete tables: [`results/results.md`](results/results.md). Per-run metrics: [`
 ## Limitations
 
 - **Scale.** 8 agents per run and 1–3 seeds per condition (the paper uses up to 20 agents and 8 seeds); one of the paper's three environments.
+- **Verifier baseline.** All local models, including the 0.6B verifier, run 4-bit quantized (Ollama `Q4_K_M`); the paper does not state its precision. Together with the action rendering and templated offline logs, this may explain why the 0.6B verifier accepts more false reports here than the paper's results suggest.
 - **Agents.** Qwen3-8B with thinking disabled and reasoning capped at about 150 words, instead of the paper's Qwen3-Next-80B-A3B. Only prompted bad actors; no fine-tuned (emergently misaligned) agents.
 - **Labels.** Violation labels come from Claude Haiku 4.5 rather than the paper's gpt-5-mini judge, with one call per round covering all agents. "False" report counts use a target-level definition: the target had no judged violation at or before the report round.
 - **E0 design.** Target logs are generated from templates, not full simulations. The attack style changes authority, specificity and fabrication at once, so the effect of each is not isolated.
